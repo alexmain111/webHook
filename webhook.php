@@ -1,7 +1,7 @@
 <?php
 // Получение входящих данных в формате JSON
 $input = file_get_contents("php://input");
-$data = json_decode($input);
+$data = json_decode($input, true);
 
 if ($data) {
     // Обработка данных из вебхука
